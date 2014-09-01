@@ -1,0 +1,17 @@
+Simple implementation of C vector library.
+
+To build:
+    1>  pull repo
+    2>  change directory to cvector folder
+    3>  enter 'make' command
+    4>  it will create shared library 'libcvector.so'
+
+To use:
+    1>  add cvector.h to c file
+    2>  compile using gcc with, 
+        -L to tell gcc where to find library
+        -Wl,-rpath to tell linker where to find library at run time
+        -lcvector to pass library name
+        (you can use any other methods to do all this steps)
+    3>  use 'cvector_size' global variable to assign initial value for
+        array size.
